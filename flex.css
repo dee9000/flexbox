@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #F3F0EC;
+
+
+}
+h1,h2{
+  text-align:center;
+  margin:0.5em 0;
+}
+.flex-wrap {
+  margin: 50px 10px;
+  background-image: url("img/pngegg-geo.png");
+  background-image: url("img/polka-two.png");
+  background-repeat:repeat;
+  background-size:contain;
+}
+
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+  display: flex;
+  border-radius: 15px;
+
+
+}
+.flex-inner {
+  margin: auto;
+
+
+}
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 25px;
+  max-width: 1280px;
+  margin: 10px auto;
+
+
+}
+.w60 {
+  flex: 1 0 55%;
+  background: #f9f9f9;
+  padding: 10px 20px;
+  margin-right: 0.5em;
+}
+.w30 {
+  background: #f9f9f9;
+}
+.wrap2 .w60{
+  flex: 1 0 50%;
+}
+
+.object-fit {
+  overflow: hidden;
+  position: relative;
+  max-width:50%;
+  border-radius: 15px;
+
+}
+.object-fit img {
+  width:auto;
+  height:320px;
+  display:block;
+  margin:auto;
+}
+
+
+@media screen and (max-width: 800px) {
+  .flex-row {
+    flex-wrap: wrap;
+  }
+  .flex-wrap .flex-row > * {
+    flex: 1 0 100%;
+    max-width:none;
+  }
+
+  .object-fit img {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: block;
+    transform: none;
+
+  }
+
+  .flex-inner {
+    margin: 0 0 0 20px;
+  }
+  .textbox-1 {
+    order: 1;
+    min-height: 0;
+    margin: 10px 5px 0 0.5px;
+
+
+  }
+}
